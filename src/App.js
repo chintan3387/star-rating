@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 import fontawesome from '@fortawesome/fontawesome';
@@ -14,6 +13,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <h2> Star rating using React and Ion-Icons</h2>
         <StarRating rating={5} />
       </div>
     );
