@@ -39,7 +39,7 @@ export default class StarRating extends Component {
     .map((item , i) => {
       let klass = (rating !== null && rating >= i) ? 'ion-ios-star' : 'ion-ios-star-outline';
       return  <i
-                style={{display:"inline-block", overflow: "hidden"}}
+                style={{display:"inline-block", overflow: "hidden", color: klass === "ion-ios-star" ? "gold" : ""}}
                 className={klass}
                 onMouseOver={() => this.handleMouseOver(i)}
                 onClick = {() => this.rate(i)}
